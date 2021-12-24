@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "ea4e883e-d6dc-4e71-adeb-3780c56b91db",
+		"name": "ShipEngine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createShipFrom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "jan muhammad mirza",
+							"type": "text"
+						},
+						{
+							"key": "cname",
+							"value": "Example Corp",
+							"type": "text"
+						},
+						{
+							"key": "phoneNum",
+							"value": "555-555-5555",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "4009 Marathon Blvd",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Austin",
+							"type": "text"
+						},
+						{
+							"key": "pcode",
+							"value": "78756",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "TX",
+							"type": "text"
+						},
+						{
+							"key": "indc",
+							"value": "no",
+							"type": "text"
+						},
+						{
+							"key": "ccode",
+							"value": "US",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/createShipFrom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createShipFrom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getShipInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fromId",
+							"value": "recSc4wkx23jYkKSL",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Jane Doe",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "525 S Winchester Blvd",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "San Jose",
+							"type": "text"
+						},
+						{
+							"key": "pcode",
+							"value": "95128",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "CA",
+							"type": "text"
+						},
+						{
+							"key": "indc",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "ccode",
+							"value": "US",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/getShipInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getShipInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
